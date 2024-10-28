@@ -1,0 +1,421 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: #f06292;
+    padding: 0 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    height: 145px;
+}
+
+.header-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+header h1 {
+    color: white;
+    font-size: 50px;
+    margin: 0;
+    margin-top: -20px;
+}
+
+header nav {
+    display: flex;
+    gap: 10px;
+    margin-top: -10px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.search-container input {
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+    width: 300px;
+    background-color: white;
+    color: #333;
+}
+
+.search-container i {
+    color: white;
+    font-size: 18px;
+}
+
+.anik {
+    font-family: "Playwrite US Trad", cursive;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-size: 50px;
+}
+
+.store-header {
+    font-family: "Amiri", serif;
+    font-weight: 700;
+}
+
+.new-arrivals {
+    background-color: #a3ff00;
+    color: #ff66a3;
+    text-align: center;
+    padding: 10px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.coming-soon {
+    background-color: #ffd1dc;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.coming-soon h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.coming-soon .characters {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin-bottom: 20px;
+}
+
+.coming-soon .characters img {
+    width: 100px;
+    height: 200px;
+}
+
+.coming-soon .notify-button {
+    background-color: #ff66a3;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.featured-products {
+    text-align: center;
+    padding: 20px;
+}
+
+.featured-products h2 {
+    font-size: 50px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-family: "Geologica", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-variation-settings: "slnt" 0, "CRSV" 0, "SHRP" 0;
+    font-size: 60px;
+}
+
+.product {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.product:nth-child(odd) {
+    background-color: #ccff00;
+}
+
+.product:nth-child(even) {
+    background-color: #b3e6ff;
+}
+
+.product img {
+    width: 250px;
+    height: auto;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+
+.product .description {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+}
+
+.product .description h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.product .description p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.product .description a {
+    color: #ff66a3;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.product .description a:hover {
+    text-decoration: underline;
+}
+
+.shop-now-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.shop-now-text {
+    flex: 1;
+    font-size: 18px;
+    color: #333;
+    margin-right: 40px;
+}
+
+.shop-now-text p {
+    margin: 0;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.shop-now-callout {
+    text-align: right;
+}
+
+.shop-now-callout h2 {
+    font-size: 50px;
+    font-weight: 900;
+    margin: 0 0 10px;
+    color: #000;
+}
+
+.shop-now-callout p.check-store {
+    font-size: 24px;
+    font-weight: 600;
+    color: #000;
+    text-decoration: underline;
+    position: relative;
+    display: inline-block;
+}
+
+.shop-now-callout p.check-store::after {
+    content: "←";
+    font-size: 24px;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.shop-now-callout p.check-store:hover {
+    cursor: pointer;
+    text-decoration: none;
+    color: #ff4081;
+}
+
+footer {
+    background-color: #f06292;
+    color: white;
+    padding: 40px 20px;
+}
+
+footer .social-icons {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+footer .social-icons i {
+    margin: 0 10px;
+    color: white;
+}
+
+footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer .footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+footer .footer-section h4 {
+    margin-bottom: 10px;
+}
+
+footer .footer-section p, footer .footer-section a {
+    color: white;
+    text-decoration: none;
+    margin: 5px 0;
+}
+
+footer .newsletter input {
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+.button-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e91e63;
+    color: white;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+footer .newsletter button {
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #e91e63;
+    color: white;
+}
+
+@media (max-width: 430px) {
+    body {
+        padding: 0;
+        font-size: 14px;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10px;
+        height: auto;
+    }
+
+    .header-left {
+        align-items: center;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    header h1 {
+        font-size: 36px;
+        margin-bottom: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav {
+        justify-content: center;
+        width: 100%;
+        gap: 5px;
+        margin-bottom: 15px;
+        font-size: 14px;
+    }
+
+    .search-container {
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+        width: 90%;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .search-container input {
+        width: 70%;
+        padding: 8px;
+    }
+
+    .new-arrivals {
+        padding: 10px 5px;
+        font-size: 16px;
+    }
+
+    .coming-soon h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .coming-soon .characters {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .product {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .product img {
+        width: 100%;
+        max-width: 200px;
+        margin: 0;
+    }
+
+    .featured-products h2 {
+        font-size: 32px;
+    }
+
+    .shop-now-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .shop-now-text, .shop-now-callout {
+        margin-bottom: 10px;
+    }
+
+    .shop-now-callout h2 {
+        font-size: 36px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-section {
+        margin-bottom: 20px;
+    }
+
+    footer .social-icons i {
+        font-size: 18px;
+    }
+
+    footer .newsletter input,
+    footer .newsletter button {
+        width: 90%;
+        margin-bottom: 10px;
+    }
+
+    .button-link {
+        display: block;
+        width: 90%;
+        margin: 10px auto;
+        text-align: center;
+    }
+}
